@@ -4,6 +4,9 @@ print(input("If you have guessed a number then press enter: "))
 print(input("Okey, now multiply it by 2 and then press enter: "))
 print(input("Now again one more time multiply it by 2 and then press enter: "))
 a = int(input("Now multiply it by 5 and write the result: "))
-print("Hmm, interesting...")
-print("Are you think about", a/20, "?")
+if(a%20==0):
+    print("Hmm, interesting...")
+    print("Are you think about", a/20, "?")
+else:
+    print("Sorry to say but you have not followed the instruction properly, Please try again")
 print(input("Thank You for playing"))
